@@ -1,0 +1,330 @@
+:root {
+    --bg-secondary: #f8f89e;
+    --bg-primary: #F97B22;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: var(--black);
+    min-height: 5000px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid var(--bg-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+.navbar .nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--white);
+}
+.navbar .nav-logo span {
+    color: var(--bg-secondary);
+}
+.navbar .navbar-nav a{
+    color: var(--white);
+    display: inline;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover, 
+.navbar .nav-extra a:hover {
+    color: var(--bg-secondary);
+}
+.navbar .nav-extra button  {
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--white);
+    margin: 0 0.5rem;
+    
+}
+.navbar .nav-extra a{
+    color: var(--white);
+    margin: 0 0.5rem;
+}
+
+#hamb-menu {
+    display: none;
+}
+
+/* Hero */
+.hero {
+    background-image: url('../img/1.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(248, 248, 158, 0) 50%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+.hero .content h1 {
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--black);
+    font-size: 4em;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
+}
+.hero .content p {
+    font-size: 1.5rem;
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--black);
+    margin: 2rem 0;
+}
+.hero .content .cta {
+    background-color: var(--bg-primary);
+    margin-top: 1.5rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: var(--white);
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+.hero .content .cta:hover {
+    background-color: var(--bg-secondary);
+    color: var(--black);
+}
+
+/* About */
+
+.about, .menu, .contact {
+    color: var(--white);
+    padding: 8rem 7% 1.4rem;
+}
+.about h2, .menu h2, .contact h2 {
+    font-family: 'Bruno Ace SC', cursive;   
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.about h2 span, .contact h2 span {
+    color: var(--bg-secondary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.about .row .content p {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+/* Menu */
+.menu p, .contact p {
+    text-align: center;
+    max-width: 30rem;
+    font-weight: 100;
+    margin: auto;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .menu-card {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.menu .menu-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.menu .menu-card .menu-card-title {
+    margin-top: 1.5rem auto 0.5rem;
+}
+
+.menu .row .menu-card-price {
+    font-weight: bold;
+}
+
+/* Contact */
+
+.contact .row {
+    border: 1px solid var(--white);
+    padding: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact .row form h1 {
+    font-size: 2.5rem;
+}
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    /* background-color: var(--bg-secondary); */
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+    color: var(--white);
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.2rem;
+    background: none;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--bg-primary);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+
+/* Responsive */
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62%;
+    }
+   
+    #hamb-menu {
+        display: inline;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--white);
+        width: 30rem;
+        height: 100vh;
+        transition: all 0.5s;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--black);
+        display: block;
+        font-size: 2rem;
+        margin: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.6rem;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .menu p {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
