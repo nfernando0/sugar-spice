@@ -57,7 +57,7 @@ body {
 .navbar .nav-extra a:hover {
   color: var(--bg-secondary);
 }
-.navbar .nav-extra button {
+.navbar .nav-extra a {
   background-color: transparent;
   cursor: pointer;
   color: var(--white);
@@ -70,6 +70,40 @@ body {
 
 #hamb-menu {
   display: none;
+}
+
+/* Search Form */
+.navbar .search__form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 40rem;
+  height: 4rem;
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search__form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search__form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  color: #010101;
+  padding: 1rem;
+}
+.navbar .search__form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #010101;
 }
 
 /* Hero */
@@ -129,13 +163,15 @@ body {
 
 .about,
 .menu,
-.contact {
+.contact,
+.products {
   color: var(--white);
   padding: 8rem 7% 1.4rem;
 }
 .about h2,
 .menu h2,
-.contact h2 {
+.contact h2,
+.products h2 {
   font-family: "Bruno Ace SC", cursive;
   font-size: 2.3rem;
   text-align: center;
@@ -175,7 +211,8 @@ body {
 
 /* Menu */
 .menu p,
-.contact p {
+.contact p,
+.products p {
   text-align: center;
   max-width: 30rem;
   font-weight: 100;
@@ -204,6 +241,48 @@ body {
 
 .menu .row .menu-card-price {
   font-weight: bold;
+}
+
+/* Products */
+.product__card {
+  border: 1px solid #fff;
+  width: 25rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.products .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product__card .product__img  {
+  margin: 1rem auto ;
+  display: flex;
+  justify-content: center;
+}
+.product__card .product__body {
+  color: var(--white);
+}
+.product__card .product__body p {
+  margin: 3rem 0;
+}
+.product__card .product__body h2 {
+  font-size: 1rem;
+  margin: 3rem 0;
+}
+
+.product__card .product__body button {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  margin: auto;
 }
 
 /* Contact */
@@ -364,6 +443,11 @@ footer .credit a {
   }
   .contact .row form {
     padding: 2rem 3rem;
+  }
+
+  .navbar .search__form {
+    width: 50%;
+    right: 2rem;
   }
 }
 

@@ -8,7 +8,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
@@ -23,14 +26,27 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Product</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="nav-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="search__btn"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-        <button href="#" id="hamb-menu"><i data-feather="menu"></i></button>
+        <a href="#" id="hamb-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search form start -->
+      <div class="search__form">
+        <input
+          type="search"
+          name="search__box"
+          placeholder="Search here..."
+          id="search__box"
+        />
+        <label for="search__box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search form end -->
     </nav>
     <!-- End Navbar -->
 
@@ -38,7 +54,9 @@
     <section class="hero" id="home">
       <main class="content">
         <h1>Lorem ipsum dolor sit.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea enim!</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ea enim!
+        </p>
         <a href="#" class="cta">Beli Sekarang</a>
       </main>
     </section>
@@ -54,8 +72,18 @@
         </div>
         <div class="content">
           <h3>Kenapa???</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus obcaecati illum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus obcaecati illum?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus obcaecati illum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum necessitatibus obcaecati illum?</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+            necessitatibus obcaecati illum? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Dolorum necessitatibus obcaecati
+            illum?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+            necessitatibus obcaecati illum? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Dolorum necessitatibus obcaecati
+            illum?
+          </p>
         </div>
       </div>
     </section>
@@ -64,36 +92,63 @@
     <!-- Menu Section Start -->
     <section class="menu" id="menu">
       <h2>Menu</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero tempora totam sapiente.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+        libero tempora totam sapiente.
+      </p>
 
       <div class="row">
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Bubur Manado</h3>
           <p class="menu-card-price">23k</p>
         </div>
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Mie Cakalang</h3>
           <p class="menu-card-price">23k</p>
         </div>
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Nasi Goreng</h3>
           <p class="menu-card-price">23k</p>
         </div>
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Ayam Goreng</h3>
           <p class="menu-card-price">23k</p>
         </div>
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Bubur Manado</h3>
           <p class="menu-card-price">23k</p>
         </div>
         <div class="menu-card">
-          <img src="http://via.placeholder.com/300x300" alt="" class="menu-card-img" />
+          <img
+            src="http://via.placeholder.com/300x300"
+            alt=""
+            class="menu-card-img"
+          />
           <h3 class="menu-card-title">Bubur Manado</h3>
           <p class="menu-card-price">23k</p>
         </div>
@@ -101,10 +156,67 @@
     </section>
     <!-- Menu Section End -->
 
+    <!-- Product Section Start -->
+    <section class="products" id="products">
+      <h2>products</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+        veniam omnis laborum reiciendis, neque expedita?
+      </p>
+
+      <div class="row">
+        <div class="product__card">
+          <div class="product__img">
+            <img src="http://via.placeholder.com/100x100" alt="">
+          </div>
+          <div class="product__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illo!</p>
+            <h2>Rp. 20.000</h2>
+            <button type="submit"> <i data-feather="shopping-cart"></i> Add to cart</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__img">
+            <img src="http://via.placeholder.com/100x100" alt="">
+          </div>
+          <div class="product__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illo!</p>
+            <h2>Rp. 20.000</h2>
+            <button type="submit"> <i data-feather="shopping-cart"></i> Add to cart</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__img">
+            <img src="http://via.placeholder.com/100x100" alt="">
+          </div>
+          <div class="product__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illo!</p>
+            <h2>Rp. 20.000</h2>
+            <button type="submit"> <i data-feather="shopping-cart"></i> Add to cart</button>
+          </div>
+        </div>
+        <div class="product__card">
+          <div class="product__img">
+            <img src="http://via.placeholder.com/100x100" alt="">
+          </div>
+          <div class="product__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illo!</p>
+            <h2>Rp. 20.000</h2>
+            <button type="submit"> <i data-feather="shopping-cart"></i> Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Product Section End -->
+
     <!-- Contact Section Start -->
     <section class="contact" id="contact">
       <h2>Contact <span>Us</span></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate et animi quis culpa minima.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate et
+        animi quis culpa minima.
+      </p>
 
       <div class="row">
         <iframe
