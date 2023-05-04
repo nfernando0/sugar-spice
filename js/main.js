@@ -38,7 +38,7 @@ document.addEventListener("click", function (e) {
     shoppingCart.classList.remove("active");
   }
   if (!itemDetail.contains(e.target) && !itemModal.contains(e.target)) {
-    itemModal.classList.remove("active");
+    itemModal.style.display = "none";
   }
 });
 
@@ -52,9 +52,7 @@ itemDetail.onclick = (e) => {
   e.preventDefault();
 };
 
-const closeBtn = document.querySelector(".close-icon");
-
-closeBtn.onclick = (e) => {
+document.querySelector(".close-icon").onclick = (e) => {
   itemModal.style.display = "none";
   e.preventDefault();
 };
